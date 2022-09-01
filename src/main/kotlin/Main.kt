@@ -1,15 +1,19 @@
-fun main(args: Array<String>) {
-    // Entrada/input
-    var input = readln()
+import java.util.Scanner
 
-    // Config
-    val nameBot = "Doura"
-    val createdIn = 2022
+fun main(args: Array<String>) {
 
     // greeting of bot
-    println("Hello! My name is $nameBot")
-    println("I was Created in $createdIn")
+    println("Hello! My name is ${ConfigBot.nameBot}")
+    println("I was Created in ${ConfigBot.createdIn}")
 
     // greeting of human
-
+    if (ConfigBot.satusConfig) {
+        println("How can you help, ${ConfigBot.userName}?")
+        ConfigBot.inputBot()
+    } else {
+        println("Please, remind me your name.")
+        ConfigBot.userName = ConfigBot.inputBot()
+        println("What a great name you have, ${ConfigBot.userName}!")
+        ConfigBot.satusConfig = true;
+    }
 }
