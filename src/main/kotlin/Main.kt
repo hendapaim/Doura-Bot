@@ -1,7 +1,5 @@
-import java.util.Scanner
 
 fun main(args: Array<String>) {
-
     // greeting of bot
     println("Hello! My name is ${ConfigBot.nameBot}")
     println("I was Created in ${ConfigBot.createdIn}")
