@@ -1,4 +1,4 @@
 # Doura-Bot
-Chat Bot Doura - um amigo em qualquer lugar
+Doura - Um Smart Enquiry Chatbot
 
 # Olá 👋, Sou a Doura a sua assistente
